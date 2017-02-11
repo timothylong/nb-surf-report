@@ -1,0 +1,200 @@
+* {
+	box-sizing: border-box;
+	position: relative;
+}
+html {
+	-ms-text-size-adjust:100%;
+	-webkit-text-size-adjust:100%;
+}
+body {
+	font:400 9px/1.5 "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	letter-spacing: 0.01rem;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+	text-rendering: optimizeLegibility;
+	margin:0;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	color: #888;
+}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section {
+	display:block;
+}
+@-webkit-keyframes fadeIn {
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:0.15;
+	}
+}
+@keyframes fadeIn {
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:0.15;
+	}
+}
+.loading {
+	z-index:15;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:#fff;
+	color:#fff;
+	transition:0.25s linear all;
+}
+.loading img {
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:40px;
+	height:auto;
+	-webkit-animation-duration:0.35s;
+	animation-duration:0.35s;
+	-webkit-animation-delay:0.15s;
+    animation-delay:0.15s;
+	-webkit-animation-fill-mode:both;
+	animation-fill-mode:both;
+	-webkit-animation-name:fadeIn;
+	animation-name:fadeIn;
+}
+.loading.active {
+	visibility:visible;
+	opacity:1;
+}
+.loading.inactive {
+	visibility:hidden;
+	opacity: 0;
+}
+.widget {
+	display:table;
+	width:300px;
+	height:auto;
+	min-height:250px;
+	padding:2.25em;
+	text-align:center;
+}
+.interior {
+	display:table-cell;
+	vertical-align:middle;
+	z-index: 10;
+}
+.widget h1 {
+	font-size:1em;
+	margin: 0 0 1.5em;
+	font-weight:inherit;
+}
+.primary:before,.primary:after {
+	content:"";
+	display:block;
+	width:50px;
+	height:1px;
+	background-color:#ddd;
+	margin:1.75em auto;
+}
+.swell {
+	font-size:1.75em;
+	line-height:1;
+	color:#222;
+}
+.swell-range {
+	font-size:2.5em;
+	line-height:1;
+}
+.wind {
+	font-size: 1.25em;
+	margin-top:0.75em;
+}
+.wind span {
+	padding: 0 0.75em;
+}
+.info-btn {
+	width: 12px;
+	height: auto;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	cursor: pointer;
+}
+.info-btn a {
+	outline: 0;
+}
+.info-btn img {
+	width: 12px;
+	height: auto;
+	display: block;
+}
+@-webkit-keyframes front {
+	100% {
+		-webkit-transform:translate(-50%,0);
+		transform:translate(-50%,0);
+	}
+}
+@keyframes front {
+	100% {
+		-webkit-transform:translate(-50%,0);
+		transform:translate(-50%,0);
+	}
+}
+@-webkit-keyframes back {
+	100% {
+		-webkit-transform:translate(50%,0);
+		transform:translate(50%,0);
+	}
+}
+@keyframes back {
+	100% {
+		-webkit-transform:translate(50%,0);
+		transform:translate(50%,0);
+	}
+}
+.water-container {
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:50%;
+	overflow:hidden;
+	z-index:5;
+}
+.water {
+	position:absolute;
+	height:100%;
+	width:100%;
+	bottom:0;
+	left:0;
+	z-index:10;
+	background:#eee;
+	-webkit-transform:translate(0,50%);
+	transform:translate(0,50%);
+}
+.wave {
+	width:200%;
+	position:absolute;
+	bottom:100%;
+}
+.wave.back {
+	right:0;
+	fill:#f5f5f5;
+	-webkit-animation:back 3.4s infinite linear;
+	animation:back 3.4s infinite linear;
+}
+.wave.front {
+	left:0;
+	fill:#eee;
+	margin-bottom:-1px;
+	-webkit-animation:front 1.7s infinite linear;
+	animation: front 1.7s infinite linear;
+}
+@media only screen and (max-width: 600px) { }

@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Newport Beach Surf Report",
+  "description": "",
+  "version": "0.0.1",
+  "browser_action": {
+    "default_icon": "assets/images/icon.png",
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "tabs",
+    "http://*/",
+    "http://magicseaweed.com/*",
+    "https://magicseaweed.com/*"
+  ],
+	"content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["assets/js/jquery.min.js", "assets/js/app.js"],
+			"run_at": "document_start"
+    }
+  ]
+}
