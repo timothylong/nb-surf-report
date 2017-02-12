@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Newport Beach Surf Report",
   "description": "Current swell and wind conditions for the city of Newport Beach, California.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "browser_action": {
     "default_icon": "assets/images/icon.png",
     "default_popup": "index.html"
@@ -10,12 +10,5 @@
   "permissions": [
     "http://magicseaweed.com/*",
     "https://magicseaweed.com/*"
-  ],
-	"content_scripts": [
-    {
-      "matches": ["http://*/*", "https://*/*"],
-      "js": ["assets/js/jquery.min.js", "assets/js/app.js"],
-			"run_at": "document_start"
-    }
   ]
 }
