@@ -4,4 +4,4 @@ A free Chrome extension that provides current swell and wind conditions for the 
 
 [https://chrome.google.com/webstore/detail/newport-beach-surf-report/ejdnfoaapjhdlebeabhpeokllnofoedc](https://chrome.google.com/webstore/detail/newport-beach-surf-report/ejdnfoaapjhdlebeabhpeokllnofoedc)
 
-<img src="assets/images/screen.jpg" width="400">
+<img src="assets/images/screen.gif" width="320">
