@@ -1,8 +1,8 @@
 $(function() {
-	var key = config.key;
+	// var key = config.key;
 	$.ajax({
 		type: 'GET',
-		url: 'https://magicseaweed.com/api/' + key + '/forecast/?spot_id=665',
+		url: 'https://magicseaweed.com/api/f2d947a2b71853aa209dd4128d7a34e8/forecast/?spot_id=665',
 		contentType: "text/plain",
 		dataType: "json",
 		beforeSend: function() {
