@@ -1,5 +1,7 @@
 # Newport Beach Surf Report
 
+Update: Magicseaweed API is sunsetting 6/1/23. This extension will no longer be functional after that point.
+
 A free Chrome extension that provides current swell and wind conditions for the city of Newport Beach, California. Data provided by the [Magic Seaweed](http://magicseaweed.com) API.
 
 [https://chrome.google.com/webstore/detail/newport-beach-surf-report/ejdnfoaapjhdlebeabhpeokllnofoedc](https://chrome.google.com/webstore/detail/newport-beach-surf-report/ejdnfoaapjhdlebeabhpeokllnofoedc)
